@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #FCD230;
+}
+ul{
+	margin-top: 50px;
+	list-style: none;
+	font-weight: bold;
+}
+ul li textarea{
+	width: 550px;
+	height: 135px;
+	resize: none;
+	border-radius: 15px;
+	text-indent: 30px;
+    font-family: "微软雅黑" "agency fb";
+    font-size: 20px;
+}
+ul li img{
+	width: 250px;
+	height: 200px;
+	
+}
+ul li div{
+	width: 500px;
+	margin: 0px auto;
+}
+ul li span{
+	font-size: 20px;
+}
+a{
+	font-size:20px;
+	font-weight:bold ;
+	text-align: 20px;
+	text-decoration: none;
+}
+input{
+	width: 100px;
+	height: 30px;
+	border-radius:7px ;
+}
+h1{
+	width: 200px;
+	text-align: center;
+	margin: 0px auto;
+}

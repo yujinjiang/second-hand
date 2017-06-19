@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="hello">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/user-home.css"/>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript">	
+		</script>
+		<script src="js/angular.js" type="text/javascript">	
+		</script>
+		
+		
+	</head>
+	<body ng-controller="box">
+	<header>
+			
+			<a href="second-page.htmll"><input type="button" value="返回主页" class="Bedown"/></a>
+		 	<a href="second-page.html"><input type="button"  value="返回主页" id="" /></a> 
+		 	
+				<span id="message">	
+				</span>
+			</header>
+			<!--这个form 一会会被应用于点击事件触发 -->
+			<form class="clickshow" id="form">
+				<fieldset id="">
+					<legend>登陆</legend>
+				<div id="">
+					账号：<input type="text"  id="count" value=""  placeholder="count"/>
+				</div>
+				<div id="">
+					密码：<input type="password" name="password" id="password" value=""  placeholder="password"/>
+				</div>
+				<div >
+					<input  type="button" value="登陆" class="move position" id="on" />||<input  id="out" class="move" type="button" value="取消">
+				</div>
+				</fieldset>
+		    </form>
+		    
+		   <!--
+		   	下面的区域用于在数据库里面取数据
+		      	
+		   --> 
+	<h1>我发布的商品</h1>
+	
+<div class="mainpalce"  ng-hide="true" >
+	<h1>我的商品只能查询最近的5件商品</h1>		   
+	<ul>
+		<li>
+			<span>标题：1234</span> <span>价格：1234</span><br/>
+			<textarea readonly="readonly" >2132132134221321</textarea><br/>
+			<img src=""/><img src=""/><img src=""/><img src=""/><img src=""/>
+		</li>
+		<li>
+			<span>标题：1234</span> <span>价格：1234</span><br/>
+			<textarea readonly="readonly" >2132132134221321</textarea><br/>
+			<img src=""/><img src=""/><img src=""/><img src=""/><img src=""/>
+		</li>
+		<li>
+			<span>标题：1234</span> <span>价格：1234</span><br/>
+			<textarea readonly="readonly" >2132132134221321</textarea><br/>
+			<img src=""/><img src=""/><img src=""/><img src=""/><img src=""/>
+		</li>
+		<li>
+			<span>标题：1234</span> <span>价格：1234</span><br/>
+			<textarea readonly="readonly" >2132132134221321</textarea><br/>
+			<img src=""/><img src=""/><img src=""/><img src=""/><img src=""/>
+		</li>
+		<li>
+			<span>标题：1234</span> <span>价格：1234</span><br/>
+			<textarea readonly="readonly" >2132132134221321</textarea><br/>
+			<img src=""/><img src=""/><img src=""/><img src=""/><img src=""/>
+		</li>
+	</ul>
+</div>		   
+
+<div >
+	
+	<script src="js/user-home-test.js" type="text/javascript">      
+      </script>
+       	<div  class="mainplace">
+       		<ul>
+       		<li ng-repeat="v in data">
+       		<span>标题：{{v.title}}</span> <span>价格：{{v.price}}</span><br/>
+			<textarea readonly="readonly" >{{v.describle}}</textarea><br/>
+			<img ng-src="{{v.pic1}}" ng-hide="!v.pic1"/><img ng-src="{{v.pic2}}" ng-hide="!v.pic2"/><img ng-src="{{v.pic3}}"  ng-hide="!v.pic3" / ><img ng-src="{{v.pic4}}" ng-hide="!v.pic4"/><img ng-src="{{v.pic5}}" ng-hide="!v.pic5"/>
+			
+       	</li>
+       	 </ul>
+       	</div>
+       	
+      
+       
+       
+	</body>
+</html>

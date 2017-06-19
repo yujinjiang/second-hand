@@ -1,0 +1,53 @@
+           *{
+				padding: 0px;
+				margin: 0px;
+				font-family: "微软雅黑" "agency fb" "arial black";
+			}
+			body{
+			 background-image: url(../image/sign----inin.jpg);
+			 background-repeat:no-repeat ;
+			 background-size:cover;
+			}
+			#wapper{
+				padding: 10px;
+				border: 1px solid;
+				border-color: bisque;
+				width: 350px;
+				margin-left: 520px;
+				margin-top: 140px;
+			}
+			input{
+				width: 200px;
+				height: 30px;
+				border-radius: 5px;
+				text-indent: 10px;
+				margin-bottom: 15px;
+				font-size: 20px;
+			}
+			button{
+				margin-left: 10px;
+				width: 220px;
+				height: 30px;
+				border-radius: 5px;
+			}
+			#submit{
+				font-size: 25px;
+				height: 40px;
+				border-radius: 10px;
+				width: 100px;
+			}
+h1{
+	font-size:50px ;
+	width: 500px;
+   text-align: center;
+	margin: 0px auto;
+	margin-top:30px ;
+}
+a input{
+	width: 100px;
+	height: 30px;
+	margin-left:20px ;
+}
+a{
+	text-decoration: none;
+}

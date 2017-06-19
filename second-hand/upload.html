@@ -1,0 +1,75 @@
+
+<!--
+	此网页 用于上传 数据  
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/upload.css"/>
+		<script src="js/angular.js" type="text/javascript">	
+		</script>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript">	
+		</script>
+		<script src="js/signin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			angular.module("hello",[]).controller("box",function($scope){
+				
+			});
+		</script>
+	</head>
+	<body ng-app="hello">
+		<header>
+			<a href="second-page.html"><input type="button" name="" id="" value="返回主页" /></a>
+			<input type="button"  value="登陆"  id="showsign" class="Bedown" />
+		<a href="signup.html"><input type="button" value="注册" class="Bedown"/></a>
+	 	<input type="button"  value="注销" id="flush" />
+			<span id="message">	
+				登陆后才能发布商品信息
+			</span>
+		</header>
+		<form class="clickshow" id="form">
+			<fieldset id="">
+				<legend>登陆</legend>
+			<div id="">
+				账号：<input type="text"  id="count" value=""  placeholder="count"/>
+			</div>
+			<div id="">
+				密码：<input type="password" name="password" id="password" value=""  placeholder="password"/>
+			</div>
+			<div >
+				<input  type="button" value="登陆" class="move position" id="on" />||<input  id="out" class="move" type="button" value="取消">
+			</div>
+				
+			</fieldset>
+		</form>
+	<h1>商品信息:</h1>
+	<form action="up-pass.php" method="post" class="myOwns"  ng-controller="box" enctype="multipart/form-data" id="mydata" >
+		<div>标题：<input type="text" name="title" id="title"  value=""  class="size" placeholder="标题不超过十个字" required="required" /></div>
+		<div>描述：<textarea name="describe" id="describe" value=""  class="sizearea"  placeholder="描述不超过一百字,带上自己的联系方式" required="required" /></textarea></div>
+		<div>价格：<input type="text" name="price"  id="price" value=""  class="size" placeholder="价格不超过一百万" required="required" /></div>
+		<div>
+			分类：<select name="select">
+				<option value="tel">手机</option>
+				<option value="pc">电脑</option>
+				<option value="bike">自行车</option>
+				<option value="book">书籍</option>
+				<option value="others">其他</option>
+			</select>
+		</div>
+		<div id="">
+			<input type="text" name="" id="" class="size" value="图片最多五张@也可不传" readonly="readonly"/>
+		</div>
+		<div>图片：<input type="file" name="file1"  value="" id="pic1" /></div>
+		<div>图片：<input type="file" name="file2"  value=""  id="pic2" /></div>
+		<div>图片：<input type="file" name="file2" value=""  id="pic3" ></div>
+		<div>图片：<input type="file" name="file4"  value=""  id="pic4" /></div>
+		<div>图片：<input type="file" name="file5"  value=""  id="pic5" /></div>
+		<input type="text" name="count"  ng-hide="true" value="" id="mycount" />
+		<input type="submit" value="确定发布" id="finalSubmit"/>
+	</form>
+	</body>
+	
+</html>

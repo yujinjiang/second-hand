@@ -1,0 +1,94 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+body{
+	background-image: url(../image/second.jpg);
+	background-repeat: no-repeat;
+     background-size: cover;;
+}
+h1{
+	font-family: "微软雅黑" "bodoni mt";
+	margin: 0px auto;
+	text-align: center;
+	font-size: 55px;
+	
+}
+header{
+	margin-top: 0px;
+	margin-left: 20px;
+	height: 35px;
+	line-height: ;
+}
+header a{
+	text-decoration: none;
+}
+header input{
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	text-indent: 10px;
+}
+header span{
+	color: red;
+}
+body .clickshow{
+	
+	color: "white";
+	position:absolute;
+	width:250px;
+	height:300px;
+	display: none;
+}
+.clickshow input{
+	width: 170px;
+	height: 35px;
+	text-indent: 10px;
+	border-radius: 5px;
+	
+}
+.clickshow  .move{
+	text-indent: 0px;
+	width: 50px;
+	
+}
+.clickshow div{
+	margin-bottom: 10px;
+}
+.position{
+	margin-left: 20px;
+}
+ul a{
+display: block;
+ text-decoration: none;
+border: 1px solid;
+height: 100px;
+width: 450px;
+margin: 0px auto;
+margin-bottom: 30px;
+}
+ul{
+	list-style: none;
+	margin-top: 30px;
+	
+}
+span{
+	margin-left: 30px;
+}
+ul a span{
+	vertical-align: 10px;
+}
+ul li{
+	border: 1px solid;
+	display: inline;
+}
+img{
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	display: inline-block;
+	display: inline;
+}

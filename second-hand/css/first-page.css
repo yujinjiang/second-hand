@@ -1,0 +1,45 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-style: italic;
+	color: #5EC3FD;
+	font-family: "微软雅黑" "agency fb" arial;
+	
+}
+body{
+	background-image: url(../image/first-page.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.heaader{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 50px;
+}
+.title{
+	text-align: center;
+	font-size: 60px;
+}
+h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+input{
+	text-decoration: none;
+	display: block;
+	margin:  0px auto;
+	width: 150px;
+	height: 45px;
+	border-radius: 10px;
+	font-size: 25px;
+}
+h1,h2,a{
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	margin-top: 530px;
+}
